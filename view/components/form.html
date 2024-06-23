@@ -1,0 +1,34 @@
+<div id="form-container" onclick="showForm(false)">
+    <form class="form" id="form" onclick="event.stopPropagation()">
+        <h2 id="header-form">New Book</h2>
+        <div class="form-group form-title">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Title" required>
+        </div>
+        <div class="form-group form-author">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" placeholder="Author" required>
+        </div>
+        <div class="form-group form-year">
+            <label for="year">Year</label>
+            <input type="number" id="year" name="year" placeholder="YYYY" required >
+        </div>
+        <div class="form-group">
+            <p>Done reading?</p>
+            <div class="radio-group">
+                <div>
+                    <input type="radio" id="notyet" name="isComplete" value="false" required>
+                    <label for="notyet">Not yet</label>
+                </div>
+                <div>
+                    <input type="radio" id="yes" name="isComplete" value="true" required>
+                    <label for="yes">Yes</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <input id="submitForm" value="Add book to shelf" type="button">
+            <button type="reset" onclick="showForm(false)">Cancel</button>
+        </div>
+    </form>
+</div>

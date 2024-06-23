@@ -1,0 +1,32 @@
+<aside id="sidebar">
+    <header>
+        <div class="logo">
+            <h1 class="logo-name">Bookshelf</h1>
+        </div>
+        <div class="search-field">
+            <input id="search" name="search" type="text" placeholder="Search..." onclick="showBooksPage()"
+                oninput="document.dispatchEvent(new Event(RENDER_EVENT_BOOKS));">
+        </div>
+        <hr>
+        </hr>
+    </header>
+    <div class="menu-container">
+        <ul class="menu">
+            <li id="dashboard-button" class="menu-item menu-dashboard" onclick="showDashboardPage()">
+                <p class="">Dashboard</p>
+            </li>
+            <li id="books-button" class="menu-item menu-books" onclick="showBooksPage()">
+                <p class="">Books</p>
+            </li>
+        </ul>
+        <footer>
+            <p>Submission Dicoding</p>
+            <p>kadeksantika | 2024</p>
+        </footer>
+    </div>
+</aside>
+<div id="sidebar-btn" class="sidebar-btn">
+    <button onclick="activeSidebar()">
+        <p>&blacktriangleright;</p>
+    </button>
+</div>
